@@ -1,14 +1,22 @@
+// page.js
+
 // Here I wanna output a bunch of meals
 
 import Link from "next/link";
+import { Suspense } from "react";
 
 import classes from "./page.module.css";
 import MealsGrid from "@/component/meals/meals-grid";
 import { getMeals } from "@/lip/meals";
 
-export default async function MealsPage() {
+// the idea behind this component is that it will fetch the data.
+async function Meals() {
   const meals = await getMeals();
 
+  return <MealsGrid meals={meals} />;
+}
+
+export default function MealsPage() {
   return (
     <>
       <header className={classes.header}>
@@ -25,7 +33,17 @@ export default async function MealsPage() {
       </header>
 
       <main className={classes.main}>
-        <MealsGrid meals={meals} />
+        <Suspense
+          fallback={
+            <div className={classes.loadingContainer}>
+              <p className={classes.loadingText}>
+                Please be patient; all the data is coming…
+              </p>
+            </div>
+          }
+        >
+          <Meals />
+        </Suspense>
       </main>
     </>
   );

@@ -1,4 +1,4 @@
-// loading.js
+// loading-out.js
 
 import classes from "./loading.module.css";
 
