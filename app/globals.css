@@ -1,3 +1,5 @@
+/* globals.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Montserrat:wght@400;700&display=swap');
 
 * {
@@ -40,4 +42,18 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   color: #ddd8d8;
+}
+
+
+/* Style the link */
+.not-found a,
+.error a {
+  color: #f9572a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.not-found a:hover,
+.error a:hover {
+  text-decoration: underline;
 }
