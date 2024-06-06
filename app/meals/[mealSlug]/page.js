@@ -2,6 +2,7 @@
 // dynamic route  -> http://localhost:3000/meals/something
 
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 import { getMeal } from "@/lip/meals";
 
@@ -9,6 +10,11 @@ import classes from "./page.module.css";
 
 export default function MealDetailsPage({ params }) {
   const meal = getMeal(params.mealSlug);
+
+  //  if "meal" is undefined (if we didn't find a meal), And then show the closest not-found page available in this project.
+  if (!meal) {
+    notFound();
+  }
 
   meal.instructions = meal.instructions.replace(/\n/g, "<br />");
 
