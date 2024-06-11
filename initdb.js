@@ -169,8 +169,8 @@ const dummyMeals = [
 // ... (similar comments for other dummy meals)
 
 // Initialize the "meals" table in the database
+// The CREATE TABLE IF NOT EXISTS statement creates a “meals” table with specific columns (id, slug, title, image, summary, instructions, creator, and creator_email).
 db.prepare(
-  //The CREATE TABLE IF NOT EXISTS statement creates a “meals” table with specific columns (id, slug, title, image, summary, instructions, creator, and creator_email).
   `
    CREATE TABLE IF NOT EXISTS meals (
        id INTEGER PRIMARY KEY AUTOINCREMENT,
