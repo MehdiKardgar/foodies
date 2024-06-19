@@ -1,8 +1,12 @@
+// ShareMealPage component
+
 import ImagePicker from "@/component/meals/image-picker"; // using our own custom ImagePicker component.
+import { shareMeal } from "@/lib/actions";
 
 import classes from "./page.module.css";
 
 export default function ShareMealPage() {
+  /*
   async function shareMeal(formData) {
     "use server";
 
@@ -17,6 +21,7 @@ export default function ShareMealPage() {
 
     console.log(meal);
   }
+  */
 
   return (
     <>
