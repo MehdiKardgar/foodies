@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 
-import ImageSlideshow from "@/component/images/image-slideshow"; // add image slideshow, basically automatically
+import ImageSlideshow from "@/components/images/image-slideshow"; // add image slideshow, basically automatically
 import classes from "./page.module.css";
 
 export default function Home() {
