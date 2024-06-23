@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 import classes from "./page.module.css";
-import MealsGrid from "@/component/meals/meals-grid";
+import MealsGrid from "@/components/meals/meals-grid";
 import { getMeals } from "@/lib/meals";
 
 // the idea behind this component is that it will fetch the data.
