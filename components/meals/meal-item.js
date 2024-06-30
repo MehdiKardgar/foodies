@@ -1,3 +1,8 @@
+// meal-item.js
+
+// The code renders an article with meal-related information, including the meal’s title, creator, summary, and image.
+// The “View Details” link navigates to a specific meal page based on the "slug".
+
 import Link from "next/link";
 import Image from "next/image";
 

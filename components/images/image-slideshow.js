@@ -1,8 +1,13 @@
+// image-slideshow.js
+
+// Displays a rotating image slideshow with alt text captions.
+
 "use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+// Import image assets
 import burgerImg from "@/assets/burger.jpg";
 import curryImg from "@/assets/curry.jpg";
 import dumplingsImg from "@/assets/dumplings.jpg";
@@ -10,8 +15,10 @@ import macncheeseImg from "@/assets/macncheese.jpg";
 import pizzaImg from "@/assets/pizza.jpg";
 import schnitzelImg from "@/assets/schnitzel.jpg";
 import tomatoSaladImg from "@/assets/tomato-salad.jpg";
-import classes from "./image-slideshow.module.css";
 
+import classes from "./image-slideshow.module.css"; // Import CSS module
+
+// Define an array of image objects with their alt text
 const images = [
   { image: burgerImg, alt: "A delicious, juicy burger" },
   { image: curryImg, alt: "A delicious, spicy curry" },
@@ -22,9 +29,11 @@ const images = [
   { image: tomatoSaladImg, alt: "A delicious tomato salad" },
 ];
 
+// Define the ImageSlideshow component
 export default function ImageSlideshow() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  // Set up an interval to cycle through images every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
@@ -32,6 +41,7 @@ export default function ImageSlideshow() {
       );
     }, 5000);
 
+    // Clean up the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
