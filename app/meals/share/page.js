@@ -1,4 +1,7 @@
 // ShareMealPage component
+
+// Defines a form for sharing favorite meals with user details and an image.
+
 "use client";
 
 import { useFormState } from "react-dom";
@@ -68,7 +71,10 @@ export default function ShareMealPage() {
             ></textarea>
           </p>
           <ImagePicker label="Your image" name="image" />
-          {state.message && <p>{state.message}</p>}
+          <p className={`${classes.actions} ${classes.message}`}>
+            {state.message && <span>{state.message}</span>}
+          </p>
+          {/* {state.message && <p>{state.message}</p>} */}
           <p className={classes.actions}>
             <MealsFormSubmit />
           </p>

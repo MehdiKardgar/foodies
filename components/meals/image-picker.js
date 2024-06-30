@@ -1,6 +1,9 @@
 // image-picker.js
 // The purpose of this component function is to render some markup for an image picker and handle the image selection process.
 
+// this code's purpose is to render an image picker interface and handle the process of selecting an image.
+// The component allows users to choose an image file, previews the selected image, and triggers the file input dialog when the “Pick an Image” button is clicked.
+
 "use client";
 
 import Image from "next/image";
