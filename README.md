@@ -1,11 +1,11 @@
 # foodies
 
-### The Image of the App
+### Image of the App
 ![Screenshot 2024-06-30 160449](https://github.com/MehdiKardgar/foodies/assets/76148286/c5130a67-3e83-4053-887a-bc5aa1a741ba)
 
 
-### The Movie of the App
-https://github.com/MehdiKardgar/foodies/assets/76148286/a3f68aca-d621-4c04-ae16-c531bcc2463c
+### Movie of the App
+https://github.com/MehdiKardgar/foodies/assets/76148286/acc34494-97b9-4856-b894-105d96c8ac61
 
 
 
