@@ -5,7 +5,7 @@
 
 
 ### The Movie of the App
-https://github.com/MehdiKardgar/foodies/assets/76148286/1f8fddc1-d0ba-4909-afe4-1739e4f624ca
+https://github.com/MehdiKardgar/foodies/assets/76148286/a3f68aca-d621-4c04-ae16-c531bcc2463c
 
 
 
