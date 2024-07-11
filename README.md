@@ -8,7 +8,7 @@ https://github.com/MehdiKardgar/foodies/assets/76148286/387be6c4-3890-4341-978a-
 
 
 ### Movie of the App
-https://github.com/MehdiKardgar/foodies/assets/76148286/d5ae52a9-17dd-4da2-b250-a1f7e24168a8
+![foodies](https://github.com/MehdiKardgar/foodies/assets/76148286/d5ae52a9-17dd-4da2-b250-a1f7e24168a8)
 
 
 <!-- npm run dev -->
