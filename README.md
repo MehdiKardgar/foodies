@@ -9,6 +9,8 @@
 ### Movie of the App
 ![foodies](https://github.com/MehdiKardgar/foodies/assets/76148286/a3b2ccce-2c50-4a70-bd98-6bc1274847ce)
 
+https://github.com/MehdiKardgar/foodies/assets/76148286/a3b2ccce-2c50-4a70-bd98-6bc1274847ce
+
 
 <!-- npm run dev -->
 
